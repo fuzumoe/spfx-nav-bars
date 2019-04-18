@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "hello-angular-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/Events/EventsWebPart.js",
+          "manifest": "./src/webparts/Events/EventsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "EventsWebPartStrings": "lib/webparts/Events/loc/{locale}.js"
+  }
+}

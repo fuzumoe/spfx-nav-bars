@@ -1,0 +1,52 @@
+<div class="${styles.events}">
+    <table class="${styles.table}">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Event Name</th>
+            <th>Total Attendees</th>
+            <th>Add</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="txtFirstName1" [(ngModel)]="newAttendeeFirstName1" /></td>
+            <td><input type="text" id="txtLastName" [(ngModel)]="newAttendeeLastName" /></td>
+            <td><input type="text" id="txtEmail" [(ngModel)]="newAttendeeEmail" /></td>
+            <td>
+                <select name="" id="" [(ngModel)]="newAttendeeEventName">
+                    <option *ngFor="let eventName of eventNames">{{eventName}}</option>
+                </select>
+            </td>
+            <td><input type="text" id="txtTotal" [(ngModel)]="newAttendeeTotal" /></td>
+            <td>
+                <input type="button" id="btnAddAttendee" value="Add" (click)="AddAttendee()">
+            </td>
+            <td>
+                <input type="button" id="btnUpdateAttendee" value="Update" (click)="UpdateAttendee()">
+            </td>
+        </tr>
+    </table>
+    <table class="${styles.table}">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Event Name</th>
+        <th>Total Attendees</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let attendee of eventCollection">
+        <td>{{attendee.FirstName1}}</td>
+        <td>{{attendee.LastName}}</td>
+        <td>{{attendee.Email}}</td>
+        <td>{{attendee.EventName}}</td>
+        <td>{{attendee.TotalAttendees}}</td>
+        <td>
+            <input type="button" id="btnPrepUpdateAttendee" value="Update" (click)="PrepUpdateAttendee(attendee)">
+        </td>
+        <td>
+            <input type="button" id="btnDeleteAttendee" value="Delete" (click)="DeleteAttendee(attendee)">
+        </td>
+    </tr>
+  </table>

@@ -1,0 +1,38 @@
+// {
+//   "port": 4321,
+//   "initialPage": "https://localhost:5433/workbench",
+//   "https": true,
+//   "api": {
+//     "port": 5433,
+//     "entryPath": "node_modules/@microsoft/sp-webpart-workbench/lib/api/"
+//   }
+// }
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://m365x672184.sharepoint.com/sites/NewTestSite/SitePages/Home.aspx",
+      "customActions": {
+        "57fa430d-8154-4b00-b285-679314f4f390": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "appCustomizer": {
+      "pageUrl": " https://m365x672184.sharepoint.com/sites/NewTestSite/SitePages/Home.aspx",
+      "customActions": {
+        "57fa430d-8154-4b00-b285-679314f4f390": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+           "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="JQueryNabBar"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="f395f315-296c-4e41-becc-d52355a5ce6d"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

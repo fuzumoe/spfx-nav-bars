@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://jljedgenuity.sharepoint.com/sites/Globomantics/Lists/Events/AllItems.aspx",
+      "customActions": {
+        "1cd9d302-54fc-4df9-9679-f1b2e3667366": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "exttest": {
+      "pageUrl": "https://jljedgenuity.sharepoint.com/sites/Globomantics/Lists/Events/AllItems.aspx",
+      "customActions": {
+        "1cd9d302-54fc-4df9-9679-f1b2e3667366": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}

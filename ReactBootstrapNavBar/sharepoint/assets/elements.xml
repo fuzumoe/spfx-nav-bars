@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="ReactBootstrapNavBar"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="fcb3b052-36c3-4f3f-bd9f-9a2ea6c4215e"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </CustomAction>
+</Elements>
