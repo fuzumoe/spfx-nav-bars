@@ -1,0 +1,40 @@
+// {
+//   "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+//   "port": 4321,
+//   "https": true,
+//   "serveConfigurations": {
+//     "default": {
+//       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+//       "customActions": {
+//         "9b7f4c71-e21f-484b-a19b-aed17f0cec8a": {
+//           "location": "ClientSideExtension.ApplicationCustomizer",
+//           "properties": {
+//             "testMessage": "Test message"
+//           }
+//         }
+//       }
+//     },
+//     "": {
+//       "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+//       "customActions": {
+//         "9b7f4c71-e21f-484b-a19b-aed17f0cec8a": {
+//           "location": "ClientSideExtension.ApplicationCustomizer",
+//           "properties": {
+//             "testMessage": "Test message"
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+{
+  "port": 4321,
+  "initialPage": "https://localhost:5433/workbench",
+  "https": true,
+  "api": {
+    "port": 5433,
+    "entryPath": "node_modules/@microsoft/sp-webpart-workbench/lib/api/"
+  }
+}
+
+// ?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={"9b7f4c71-e21f-484b-a19b-aed17f0cec8a":{"location":"ClientSideExtension.ApplicationCustomizer"}}

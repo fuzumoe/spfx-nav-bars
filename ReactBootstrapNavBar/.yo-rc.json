@@ -2,9 +2,9 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.8.0",
-    "libraryName": "npm-install-save-reactstrap-react-react-dom",
-    "libraryId": "810ddf00-fdab-4b61-b6ad-a18b7f5ef19e",
+    "version": "1.8.1",
+    "libraryName": "react-bootstrap-nav-bar",
+    "libraryId": "40f6cb27-e0b8-4212-ae6e-9dee748fb31a",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "extension",
